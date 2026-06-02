@@ -1,5 +1,8 @@
 package com.kata.tennis.domain.model;
 
+import lombok.Getter;
+
+@Getter
 public enum Player {
     A("Player A"),
     B("Player B");
@@ -10,7 +13,4 @@ public enum Player {
         this.displayName = displayName;
     }
 
-    public String getDisplayName() {
-        return displayName;
-    }
 }

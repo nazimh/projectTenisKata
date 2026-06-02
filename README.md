@@ -143,21 +143,6 @@ Annotated with `@Component` so Spring injects it into the application service au
 
 ---
 
-## Tests
-
-### Unit tests — `TennisGameApplicationServiceTest`
-Tests the service **without Spring**, instantiated manually with a lambda `ScorePresenter` that captures output into a `List<String>`.
-Organised in four `@Nested` groups:
-
-| Group | What is tested |
-|---|---|
-| `NormalScoring` | Points progression (15, 30, 40), direct win, full example `ABABAA` |
-| `DeuceRules` | Deuce display, advantage A/B, win after advantage, back to deuce |
-| `ScoreStateTransitions` | Every state transition: LOVE → FIFTEEN → THIRTY → FORTY → win/deuce/advantage |
-| `ScoreFormatting` | Format of normal score, Deuce, Advantage, win messages |
-| `InputValidation` | null, blank, empty, invalid character, case-insensitive acceptance |
-
----
 
 ## Project structure
 

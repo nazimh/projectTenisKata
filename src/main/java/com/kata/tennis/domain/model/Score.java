@@ -1,5 +1,8 @@
 package com.kata.tennis.domain.model;
 
+import lombok.Getter;
+
+@Getter
 public enum Score {
     LOVE("0"),
     FIFTEEN("15"),
@@ -10,10 +13,6 @@ public enum Score {
 
     Score(String label) {
         this.label = label;
-    }
-
-    public String getLabel() {
-        return label;
     }
 
     public Score next() {
